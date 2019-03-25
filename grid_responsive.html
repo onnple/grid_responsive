@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>Dribbble</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="css/grid_responsive.css">
+    <link rel="stylesheet" href="css/grid_responsive_phone.css" media="screen and (max-width: 767px)">
+
+</head>
+<body>
+
+<!--顶部导航栏-->
+<div class="top">
+    <header class="header">
+        <div class="begin">
+            <a class="item" href="#"><img src="images/dribbble-logo.png"></a>
+        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">问答</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">专栏</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">讲堂</a>
+            </li>
+        </ul>
+        <div class="end">
+            <a class="item login" href="#">立即登录</a>
+            <a class="item ui button small" href="#">免费注册</a>
+        </div>
+    </header>
+
+    <!--移动顶部内容-->
+    <header class="header-responsive">
+        <a class="item" href="#"><i class="icon search"></i></a>
+        <a class="item" style="justify-self: center" href="#"><img src="images/dribbble-logo.png"></a>
+        <a class="item" href="#"><i class="icon user"></i></a>
+    </header>
+
+    <!--底部导航栏-->
+    <div class="bottom-navigation">
+        <a class="item"><i class="home icon"></i>首页</a>
+        <a class="item"><i class="home icon"></i>问答</a>
+        <a class="item"><i class="home icon"></i>专栏</a>
+        <a class="item"><i class="home icon"></i>讲座</a>
+    </div>
+</div>
+
+<div class="wrapper">
+    <!--内容部分-->
+    <div class="content">
+        <!--左侧栏-->
+        <div class="sidebar-left">
+            <!--推荐导航-->
+            <div class="hot">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">为你推荐</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">近期热门</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">最新内容</a>
+                    </li>
+                    <li class="nav-item it-channel">
+                        <a class="nav-link" href="#">技术频道</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--技术频道-->
+            <div class="channel">
+                <h5>技术频道</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">前端</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">后端</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">小程序</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">人工智能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">区块链</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">安全</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--主体内容-->
+        <div class="main">
+            <!--广告轮播图-->
+            <div class="carousel">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/grid_shop_ads_02.jpg" width="100%" height="100%"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/grid_shop_ads_01.jpg" width="100%" height="100%"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/grid_shop_ads_03.jpg" width="100%" height="100%"/>
+                        </div>
+                    </div>
+
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!--文章主体-->
+            <div class="posts">
+                <div class="ui items">
+                    <div class="item">
+                        <div class="content">
+                            <a class="header">可爱的小狗</a>
+                            <div class="description">
+                                <p>萌萌狗有各种形状和大小。有的小狗因为呆萌的表情惹人疼爱，有的则因为五短身材令人怜惜。甚至还有一些会因为巨大的体型也会显得傻缺。</p>
+                                <p>Many people also have their own barometers for what makes a cute dog.</p>
+                            </div>
+                        </div>
+                        <a class="ui small image">
+                            <img src="https://semantic-ui.com/images/wireframe/image.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui items">
+                    <div class="item">
+                        <div class="content">
+                            <a class="header">可爱的小狗</a>
+                            <div class="description">
+                                <p>萌萌狗有各种形状和大小。有的小狗因为呆萌的表情惹人疼爱，有的则因为五短身材令人怜惜。甚至还有一些会因为巨大的体型也会显得傻缺。</p>
+                                <p>Many people also have their own barometers for what makes a cute dog.</p>
+                            </div>
+                        </div>
+                        <a class="ui small image">
+                            <img src="https://semantic-ui.com/images/wireframe/image.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="ui items">
+                    <div class="item">
+                        <div class="content">
+                            <a class="header">可爱的小狗</a>
+                            <div class="description">
+                                <p>萌萌狗有各种形状和大小。有的小狗因为呆萌的表情惹人疼爱，有的则因为五短身材令人怜惜。甚至还有一些会因为巨大的体型也会显得傻缺。</p>
+                                <p>Many people also have their own barometers for what makes a cute dog.</p>
+                            </div>
+                        </div>
+                        <a class="ui small image">
+                            <img src="https://semantic-ui.com/images/wireframe/image.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--右侧栏-->
+        <div class="sidebar-right">
+            <div class="recommend-item"></div>
+            <div class="recommend-item"></div>
+            <div class="recommend-item"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

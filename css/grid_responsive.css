@@ -1,0 +1,139 @@
+
+/*主体容器*/
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*顶部导航栏 开始*/
+.top{
+    width: 100%;
+    height: 66px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.top .bottom-navigation{
+    display: none;
+}
+.top .header-responsive{
+    display: none;
+}
+.top .header{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-template-areas:
+        "begin nav end";
+}
+.top .header a{
+    font-size: 16px;
+    color: #757575;
+}
+.top .header a.active{
+    color: #009a61;
+    font-weight: 600;
+}
+.top .header .begin{
+    grid-area: begin;
+}
+.top .header .nav{
+    grid-area: nav;
+    margin-left: 20px;
+}
+.top .header .end{
+    grid-area: end;
+}
+.top .header .end .ui.button,
+.top .header .end .login{
+    font-size: 13px;
+    font-weight: 400;
+}
+.top .header .end .login{
+    padding: 0.8rem 1.5rem;
+}
+.top .header .end .ui.button{
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    background-color: #009a61;
+}
+/*顶部导航栏 结束*/
+
+
+/*内容部分*/
+.wrapper .content{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+
+/*左侧栏 开始*/
+.wrapper .sidebar-left{
+    grid-column: 1 / span 2;
+    padding-right: 15px;
+}
+.wrapper .sidebar-left .hot{
+    /*height: 104px;*/
+    margin-bottom: 15px;
+}
+.wrapper .sidebar-left .hot .it-channel{
+    display: none;
+}
+.wrapper .sidebar-left .channel a,
+.wrapper .sidebar-left .hot a{
+    font-size: 14px;
+    color: #757575;
+}
+.wrapper .sidebar-left .channel{
+    height: 487px;
+    /*background-color: #b5c6ff;*/
+}
+.wrapper .sidebar-left .channel h5{
+    font-weight: 500;
+    color: #212121;
+    padding: 0 1rem;
+}
+/*左侧栏 结束*/
+
+
+/*主体内容 开始*/
+.wrapper .main{
+    grid-column: 3 / span 7;
+    padding: 0 15px;
+    height: 800px;
+}
+
+.wrapper .main .carousel{
+    height: 150px;
+    /*background-color: #ff90ab;*/
+}
+.wrapper .main .carousel .carousel-inner{
+    border-radius: 3px;
+}
+.wrapper .main .carousel img{
+    max-height: 150px;
+}
+.wrapper .main .posts{
+    margin-top: 30px;
+    /*background-color: #ffdc8a;*/
+}
+/*主体内容 结束*/
+
+
+/*右侧栏 开始*/
+.wrapper .sidebar-right{
+    grid-column: 10 / span 12;
+    padding-left: 15px;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 30px;
+}
+.wrapper .sidebar-right .recommend-item{
+    height: 352px;
+    background-color: rgba(134, 204, 255, 0.36);
+}
+/*右侧栏 结束*/

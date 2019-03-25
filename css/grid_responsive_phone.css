@@ -1,0 +1,97 @@
+
+/*顶部内容*/
+.top{
+    height: 44px;
+}
+.top .header{
+    width: 100%;
+    display: none!important;
+}
+.top .header-responsive{
+    height: 100%;
+    padding: 0 27px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+.top .header-responsive i{
+    color: #757575;
+    font-size: 17px;
+}
+.top .bottom-navigation i{
+    color: #757575;
+    font-size: 12px;
+}
+.top .bottom-navigation{
+    z-index: 99999999;
+    /*display: block;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    background-color: #fafafa;
+    box-shadow: 0 -1px rgba(0,0,0,0.1), 0 -2px 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0 27px;
+    align-self: center;
+}
+
+/*主体容器*/
+.wrapper{
+    width: 100%;
+}
+
+
+
+/*左侧栏 开始*/
+.wrapper .sidebar-left{
+    grid-column: auto;
+    width: 100%;
+}
+.wrapper .sidebar-left .hot .it-channel{
+    display: block;
+}
+.wrapper .sidebar-left .hot .flex-column {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+.wrapper .sidebar-left .channel{
+    display: none!important;
+}
+/*左侧栏 结束*/
+
+
+/*右侧栏 开始*/
+.wrapper .sidebar-right{
+    display: none!important;
+}
+/*右侧栏 结束*/
+
+
+/*内容部分*/
+.wrapper .content{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto!important;
+}
+
+
+/*主体内容 开始*/
+.wrapper .main{
+    grid-column: auto;
+}
+.wrapper .main .carousel .carousel-inner image{
+    max-width: 100%;
+}
+.wrapper .main .posts .ui.small.image{
+    width: 90px!important;
+    margin-top: 1.9rem;
+    margin-left: 0.2rem;
+}
+.wrapper .main .posts .ui.items .item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
